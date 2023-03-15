@@ -29,9 +29,9 @@ def predict():
     output = model.predict(df)
         
     if output == 0:
-        res_val = "** breast cancer **"
+        res_val = "** Breast Cancer **"
     else:
-        res_val = "no breast cancer"
+        res_val = " Good Luck No Breast Cancer"
         
 
     return render_template('index.html', prediction_text='Patient has {}'.format(res_val))
